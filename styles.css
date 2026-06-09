@@ -1,11 +1,13 @@
 :root {
   color-scheme: light;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   background: linear-gradient(135deg, #0f172a 0%, #1e293b 45%, #334155 100%);
   color: #e2e8f0;
 }
 
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
@@ -104,13 +106,19 @@ button {
   padding: 10px 14px;
   font-weight: 600;
   cursor: pointer;
-  transition: transform 120ms ease, opacity 120ms ease;
+  transition:
+    transform 120ms ease,
+    opacity 120ms ease;
   background: linear-gradient(135deg, #3b82f6, #8b5cf6);
   color: white;
 }
 
-button:hover { transform: translateY(-1px); }
-button:active { transform: translateY(0); }
+button:hover {
+  transform: translateY(-1px);
+}
+button:active {
+  transform: translateY(0);
+}
 
 button.secondary {
   background: #334155;
@@ -137,7 +145,14 @@ button.danger {
 }
 
 @media (max-width: 640px) {
-  .hero-card, .panel { padding: 18px; }
-  .button-row { flex-direction: column; }
-  button { width: 100%; }
+  .hero-card,
+  .panel {
+    padding: 18px;
+  }
+  .button-row {
+    flex-direction: column;
+  }
+  button {
+    width: 100%;
+  }
 }
