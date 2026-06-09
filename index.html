@@ -15,7 +15,12 @@
   <body>
     <main class="app-shell">
       <section class="hero-card">
-        <p class="eyebrow">Cookies em JavaScript</p>
+        <div class="top-bar">
+          <p class="eyebrow">Cookies em JavaScript</p>
+          <button id="themeToggle" class="ghost" type="button" aria-label="Alternar tema">
+            🌙 Tema escuro
+          </button>
+        </div>
         <h1>Exemplo didático de uso de cookies</h1>
         <p class="lead">
           Cookies são pequenos arquivos salvos no navegador para lembrar
@@ -55,6 +60,21 @@
           <div class="info-box">
             <strong>Cookie atual:</strong>
             <span id="cookieValue">(vazio)</span>
+          </div>
+
+          <div class="stats-grid">
+            <article class="mini-card">
+              <span class="mini-label">Último nome salvo</span>
+              <strong id="lastNameValue">—</strong>
+            </article>
+            <article class="mini-card">
+              <span class="mini-label">Visitas registradas</span>
+              <strong id="visitCountValue">0</strong>
+            </article>
+            <article class="mini-card">
+              <span class="mini-label">Último acesso</span>
+              <strong id="lastVisitValue">—</strong>
+            </article>
           </div>
         </article>
       </section>
