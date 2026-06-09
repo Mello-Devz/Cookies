@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemplo didático de cookies</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="hero-card">
+        <p class="eyebrow">Cookies em JavaScript</p>
+        <h1>Exemplo didático de uso de cookies</h1>
+        <p class="lead">
+          Cookies são pequenos arquivos salvos no navegador para lembrar informações
+          como preferências, nome do usuário ou tema.
+        </p>
+      </section>
+
+      <section class="grid">
+        <article class="panel">
+          <h2>Como funciona</h2>
+          <ol class="steps-list">
+            <li>Digite um nome e clique em “Salvar cookie”.</li>
+            <li>O navegador grava um cookie com validade de 7 dias.</li>
+            <li>Use “Ler cookie” para mostrar o valor salvo.</li>
+            <li>Use “Apagar cookie” para remover o dado.</li>
+          </ol>
+        </article>
+
+        <article class="panel control-panel">
+          <label for="nameInput">Nome para salvar</label>
+          <input id="nameInput" type="text" placeholder="Ex.: Maria" />
+
+          <div class="button-row">
+            <button id="saveBtn" type="button">Salvar cookie</button>
+            <button id="readBtn" type="button" class="secondary">Ler cookie</button>
+            <button id="deleteBtn" type="button" class="danger">Apagar cookie</button>
+          </div>
+
+          <div id="message" class="message" aria-live="polite">
+            Nenhum cookie salvo ainda.
+          </div>
+
+          <div class="info-box">
+            <strong>Cookie atual:</strong>
+            <span id="cookieValue">(vazio)</span>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
